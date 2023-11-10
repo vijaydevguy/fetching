@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="../logo.jpg" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../signin/index.html" >Sign In</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+
+    <div class="container mt-5">
+        <form id="signUpForm" onsubmit="return validateForm()" class="bg-light p-4 rounded">
+            <h2 class="mb-4">Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+                <p class="constraints" id="passwordConstraints"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <h4>If have account <a href="../signin/index.html">Signin</a></h4>
+        </form>
+    </div>
+
+    <footer>
+        <p>Phone: Your Phone Number</p>
+        <p>Email: your-email@example.com</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

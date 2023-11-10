@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../logo.jpg" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="#" >Sign In</a>
+            <a href="../signup/index.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <form id="signInForm" onsubmit="return validateForm()" class="bg-light p-4 rounded">
+            <h2 class="mb-4">Sign In</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <p class="constraints" id="passwordConstraints"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+        <h4>Don't have account <a href="../signup/index.html" style="text-decoration: none;">Signup</a></h4>
+    </div>
+
+    <footer>
+        <p>Phone: Your Phone Number</p>
+        <p>Email: your-email@example.com</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
